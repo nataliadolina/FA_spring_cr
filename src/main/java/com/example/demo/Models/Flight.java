@@ -17,6 +17,18 @@ public class Flight {
     private Date dateTime;
     private int Duration;
 
+    public void updateFlight(Flight f){
+        if(f.aviaName != null){
+            this.aviaName = f.aviaName;
+        }
+
+        if(f.dateTime != null){
+            this.dateTime = f.dateTime;
+        }
+
+        this.Duration = f.Duration;
+    }
+
     public long getId() {
         return id;
     }
